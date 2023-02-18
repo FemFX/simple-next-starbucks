@@ -1,0 +1,50 @@
+.carousel {
+  @apply grid grid-cols-4 gap-8 mt-28;
+}
+.item {
+  @apply rounded-2xl bg-light-green p-5 pt-0 mb-8 relative;
+
+  .image {
+    @apply -mt-16;
+  }
+  .heading {
+    @apply text-2xl text-light-brown mt-3 font-bold leading-6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .description {
+    @apply mt-5 text-light-brown opacity-90;
+  }
+  > div {
+    @apply relative;
+  }
+  &.active {
+    @apply bg-green shadow-2xl shadow-green p-7 pt-0 bg-no-repeat bg-contain;
+
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/404/508/original/green-winter-christmas-seamless-pattern-free-vector.jpg");
+    background-position: center -120px;
+    &::before {
+      @apply w-full h-full absolute left-0 top-0 rounded-2xl;
+      content: "";
+      background-image: linear-gradient(
+        0deg,
+        rgba(108, 148, 107, 1) 39%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+    }
+    .heading {
+      @apply text-white text-4xl leading-8;
+    }
+  }
+}
+.variations {
+  @apply grid grid-cols-4 gap-2 mt-2;
+  > button {
+    @apply transition-colors text-[0.6rem] font-semibold uppercase py-0.5 px-1 text-center border border-solid border-white bg-transparent text-white rounded;
+    &.active {
+      @apply text-dark-green bg-white;
+    }
+  }
+}

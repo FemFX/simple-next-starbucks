@@ -1,0 +1,25 @@
+.card {
+  @apply p-10 relative my-8 bg-light-gray flex justify-between;
+  border-radius: 2rem;
+}
+.info {
+  > h1 {
+    @apply text-3xl text-light-brown font-bold;
+  }
+  > div {
+    @apply mb-12;
+    > p {
+      @apply text-light-brown mb-4;
+    }
+  }
+  > button {
+    @apply rounded-2xl bg-white p-3;
+  }
+}
+.image {
+  .price {
+    @apply text-center;
+  }
+}
+.variations {
+}

@@ -1,0 +1,14 @@
+.nav {
+  @apply text-right mt-4;
+  a {
+    @apply mr-2 opacity-80 transition-opacity duration-300;
+
+    &:hover {
+      @apply opacity-100;
+    }
+  }
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.3 !important;
+}

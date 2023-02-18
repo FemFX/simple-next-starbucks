@@ -1,0 +1,30 @@
+.wrapper-cart {
+  @apply relative;
+}
+.heading {
+  @apply flex items-center;
+}
+.badge {
+  @apply flex h-5 w-5 items-center justify-center bg-red text-white text-sm rounded-full mr-4 p-1;
+}
+.cart {
+  @apply bg-light-green px-12 py-5 fixed right-0 top-0 shadow-sm rounded overflow-x-hidden h-screen;
+}
+.item {
+  @apply py-5 flex items-center border-b border-b-[#F7F4F0];
+}
+.name {
+  @apply uppercase tracking-widest font-semibold;
+}
+.price {
+  @apply text-sm mt-1 text-light-brown;
+}
+.text {
+  @apply uppercase tracking-[0.4rem] font-medium;
+}
+.button {
+  @apply text-white absolute bottom-3 p-3 rounded;
+}
+.size {
+  @apply mt-1 text-light-brown text-sm capitalize;
+}

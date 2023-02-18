@@ -1,0 +1,13 @@
+.search {
+  @apply relative w-1/3;
+  > div {
+    @apply relative;
+  }
+  // &::before {
+  //   content: "";
+  //   @apply bg-light-green rounded-full absolute -top-[309px] mx-auto w-[120%] pt-[120%] -left-[10%] opacity-70;
+  // }
+}
+.input {
+  @apply z-10 w-full border-b-2 border-b-light-brown absolute flex self-center bg-transparent outline-none text-light-brown  tracking-widest text-xl uppercase;
+}
